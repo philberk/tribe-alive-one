@@ -3,8 +3,12 @@ $link-hover: #f2e6ff;
 
 body {
   margin:40px;
+  height:200vh;
 }
 
+// .trypad {
+// position: relative;
+// }
 
 .card-category {
   background-size: cover;
@@ -16,10 +20,10 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  opacity: 0.9;
-  font-size: 32px;
+  opacity: 0.85;
+  font-size: 55px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 9px rgba(0,0,0,0.7);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
@@ -38,9 +42,40 @@ body {
 .greennav{
   color:whitesmoke;
   opacity: .7;
-
-
+  text-shadow:1px 1px 3px rgba(0,0,0,0.5);
+  :hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
+
+.greennav:before{
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.logdetails{
+  display: flex;
+  //position:relative;
+  margin: 20px 30px;
+}
+
+.navbar-itembutton{
+  color:gray;
+  //mix-blend-mode: difference;
+  right: 30px;
+  font-size: 17px;
+
+  display:inline;
+  width: 100px;
+  padding-right: 30px;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+  opacity: 0.7;
+  margin: 10px 20px;
+  position: absolute;
+}
+
+
 
 
 @import "bulma";
