@@ -10,14 +10,54 @@
         </ul>
       </div>
   </div>
-<h1> Welcome to the tribe. </h1>
-<h2> List of our products : </h2>
+    <!-->
+  <% content_for :header do %>
+    <section class='tribe-products'>
+      <div class="tribe-body">
+        <div class="container">
+          <h1 class="tribeh1">
+            Browse our new product line.
+          </h1>
+        </div>
+      </div>
+    </section>
+    <% end %>
+    -->
 
-<div class="wrapper">
-  <%= @products.each do |product| %>
-  <h1> <%= link_to product.name, product_path(product) %> - $ <%= product.price %></h1>
-  <h3> <%= product.category %></h3>
-  <h3> Sizes Available </h3>
-  <%= product.size %>
-  <% end %>
+<!-- >
+<div class="banner d-flex justify-content-center">
+  <h1> Welcome to the tribe. </h1>
+  <h2> List of our products : </h2>
+
+    <div class="product-index">
+    <%= @products.each do |product| %>
+    <h1> <%= link_to product.name, product_path(product) %> - $ <%= product.price %></h1>
+    <h3> <%= product.category %></h3>
+    <h3> Sizes Available </h3>
+    <%= product.size %>
+    <% end %>
+  </div>
+</div>
+
+-->
+
+<div class="banner d-flex justify-content-center">
+  <h1>Welcome to the tribe. Here's a list of our products:</h1>
+</div>
+<div class="container">
+  <div class="row" >
+    <% @products.each do |product| %>
+      <div class="col-md-4 col-sm-6 mt-3" style="max-width: 1450px;">
+        <div class="drone-cards mx-3 h-100">
+          <img src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-orange-with-graphic-back-print/201847608-1-apricotcream?$n_640w$&wid=634&fit=constrain">
+          <div class="drone-cards-info" style="display:relative;">
+            <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
+            <p> Description: <%= product.price %></p>
+            <p class="p-index" style="display:absolute; top:20px;"> Category <%= product.category %></p>
+          <!-- <p>Short description here!</p> -->
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

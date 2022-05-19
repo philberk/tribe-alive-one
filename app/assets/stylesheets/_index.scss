@@ -1,9 +1,36 @@
-.wrapper {
-  display: inline-grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 10px;
-  background-color: #fff;
-  position:relative;
-  top:200px;
-  color: #444;
+// .wrapper {
+//   display: inline-grid;
+//   grid-template-columns: 100px 100px 100px;
+//   grid-gap: 10px;
+//   background-color: #fff;
+//   position:relative;
+//   top:200px;
+//   color: #444;
+// }
+
+.drone-cards {
+  background-color: red;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+
+  align-items: center;
+  padding: 0px;
 }
+
+.drone-cards img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.drone-cards-info {
+  padding-bottom: 15px;
+  margin-left: 10px;
+  padding: 16px;
+}
+
+// .container {
+//   display: flex;
+//   justify-content: center;
+// }

@@ -10,6 +10,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'faker'
 gem 'better_errors'
+gem 'boostrap'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6'
