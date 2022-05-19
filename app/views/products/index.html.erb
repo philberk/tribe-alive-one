@@ -1,9 +1,11 @@
 <h1> Welcome to the tribe. </h1>
 <h2> List of our products : </h2>
 
-<%= @products.each do |product| %>
-<h1> <%= link_to product.name, product_path(product) %> - $ <%= product.price %></h1>
-<h3> <%= product.category %></h3>
-<h3> Sizes Available </h3>
-<%= product.size %>
-<% end %>
+<div class="wrapper">
+  <%= @products.each do |product| %>
+  <h1> <%= link_to product.name, product_path(product) %> - $ <%= product.price %></h1>
+  <h3> <%= product.category %></h3>
+  <h3> Sizes Available </h3>
+  <%= product.size %>
+  <% end %>
+</div>
