@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TribeAliveOne</title>
+    <title>Tribe 🌊 Alive </title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   <% if user_signed_in? %>
-    <%= link_to "Products", "#", class: "navbar-item button is-dark" %>
-
     <div class = "navbar-item has-dropwdown is-hoverable">
       <%= link_to 'Account', edit_user_registration_path, class: "navbar-link" %>
       <div class="navbar-dropdown is-right">
@@ -26,6 +24,13 @@
   <body>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1623038455007-891466ff6016?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286)">
       Tribe Alive
+    </div>
+    <div class="navbar-itemb">
+      <ul>
+        <li> <%= link_to "Products", products_path  %> </li>
+        <li> <%= link_to "About Us", about_path %></li>
+        <li> <%= link_to "Contact", contact_path%></li>
+      </ul>
     </div>
   <%= yield %>
 
