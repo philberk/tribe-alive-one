@@ -18,9 +18,9 @@
     </div>
     <% else %>
     <div class="logdetails">
-    <ul>
-       <li><%= link_to "Sign In", new_user_session_path, class:"navbar-itembutton" %></li>
-       <li><%= link_to "Sign Up", new_user_registration_path, class:"navbar-itembutton" %>`</li>
+    <ul class= "navbar-side">
+       <li class= "navbar-itembutton"><%= link_to "Sign In", new_user_session_path %></li>
+       <li class= "navbar-itembutton" ><%= link_to "Sign Up", new_user_registration_path %></li>
       <% end %>
     </ul>
     </div>
