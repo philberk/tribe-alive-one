@@ -21,12 +21,19 @@ $link-hover: #f2e6ff;
 .navbar-itemb{
   display: flex;
   justify-content: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 
  li{
     display:inline-block;
     margin: 10px 25px;
-
+    font-size: 19px;
   }
+}
+.greennav{
+  color:#213d1f;
+  opacity: .7;
+
+
 }
 
 
