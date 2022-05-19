@@ -26,7 +26,8 @@ body {
 .navbar-itemb{
   display: flex;
   justify-content: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 3px 2px 25px rgba(0,0,0,0.6);
+  padding:15px;
 
  li{
     display:inline-block;
@@ -35,7 +36,7 @@ body {
   }
 }
 .greennav{
-  color:#213d1f;
+  color:whitesmoke;
   opacity: .7;
 
 
