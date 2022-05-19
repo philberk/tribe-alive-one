@@ -57,28 +57,24 @@ body {
 .logdetails{
   display: flex;
   justify-content: flex-end;
-  padding: 5px 10%;
   width: 100%;
-  //position:relative;
-  //margin: 20px 30px;
+  mix-blend-mode: difference;
 }
 
 .navbar-side{
   list-style-type: disc;
+  mix-blend-mode: difference;
 }
 .navbar-itembutton{
-  color:gray;
-  //mix-blend-mode: difference;
-  right: 30px;
+  color:red;
+  mix-blend-mode: difference;
+  padding-bottom: 7px;
+  padding-right: 40px;
   font-size: 17px;
   display:inline-block;
-  //display:inline;
-  //width: 100px;
-  //padding-right: 30px;
   text-shadow:1px 1px 1px rgba(0,0,0,0.5);
   opacity: 0.7;
-  margin: 0 20px;
-  //position: absolute;
+  margin: 0 10px;
 }
 
 
