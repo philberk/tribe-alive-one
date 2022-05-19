@@ -8,6 +8,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'faker'
 gem 'better_errors'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'

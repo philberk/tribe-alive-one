@@ -4,6 +4,6 @@
 <%= @products.each do |product| %>
 <h1> <%= link_to product.name, product_path(product) %> - $ <%= product.price %></h1>
 <h3> <%= product.category %></h3>
-<h3> Available Sizes: </h3>
+<h3> Sizes Available </h3>
 <%= product.size %>
 <% end %>

@@ -1,0 +1,5 @@
+<h1><%= @product.name %> <%= @product.price %></h1>
+<h2><%= @product.size %></h2>
+<%= link_to 'back', products_path %>
+<%= link_to 'edit', edit_product_path(@product) %>
+<%= link_to 'delete', product_path(@product), method: :delete, data: {confirm: 'are you sure?'} %> <!-- By default, link to is a get request, hence you need to specify, method: delete>
