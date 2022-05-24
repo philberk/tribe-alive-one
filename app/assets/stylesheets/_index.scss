@@ -19,6 +19,12 @@
   padding: 0px;
 }
 
+img {
+  height: 35vh;
+  max-width: 100%;
+  border-radius: 60px;
+}
+
 .drone-cards img {
   width: 40%;
   object-fit: cover;
@@ -34,3 +40,9 @@
 //   display: flex;
 //   justify-content: center;
 // }
+
+
+// max-width: none !important;
+// min-width: 1440px;
+// padding-left: var(--gp-padding-xlargeAndAbove, 80px) !important;
+// padding-right: var(--gp-padding-xlargeAndAbove, 80px) !important;
