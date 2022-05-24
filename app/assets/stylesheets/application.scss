@@ -92,15 +92,43 @@ body {
   justify-content: flex-end;
 }
 
+.navbar-dropdown.is-right{
+  justify-content: flex-end;
+  background: white;
+  font-size:16px;
+  font-weight: bolder;
+  text-align:right;
+  box-shadow: 0 2px;
+  border-radius: .25rem;
+  display:row;
+  flex-wrap: nowrap;
+  padding:.75rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #ccccff;
+  margin-top: -0.375em;
+  right: 1.125em;
+  width:10%;
+}
+
 .navbar-link{
   color:white;
   justify-content: flex-end;
   font-weight: bolder;
-
 }
 
-.navbar-itemb{
+.navbar-link:not(.is-arrowless) {
+  padding-right: 2.5em;
+  color: white;
+}
+
+.navbar-dropdown a.navbar-item {
+  padding-right: 3rem;
   justify-content: flex-end;
 }
+
 @import "bulma";
 //@import "functions";
