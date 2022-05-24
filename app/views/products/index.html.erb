@@ -15,12 +15,13 @@
 
 <div class="index biggest-body-div">
   <h1>Welcome to the tribe. Here's a list of our products:</h1>
-</div>
-<div class="flex card container">
-    <% @products.each do |product| %>
-          <img src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-orange-with-graphic-back-print/201847608-1-apricotcream?$n_640w$&wid=634&fit=constrain" >
-            <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
-            <p> Description: <%= product.price %></p>
-            <p class="p-index" style="display:absolute; top:20px;"> Category <%= product.category %></p>
-    <% end %>
+    <div class="flex card container">
+      <% @products.each do |product| %>
+            <img src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-orange-with-graphic-back-print/201847608-1-apricotcream?$n_640w$&wid=634&fit=constrain" >
+              <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
+              <p> Price (€): <%= product.price %></p>
+              <p class="p-index" style="display:absolute; top:20px;"> Category: <%= product.category %></p>
+      <% end %>
+  </div>
+
 </div>
