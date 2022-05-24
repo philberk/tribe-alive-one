@@ -84,10 +84,23 @@ body {
   border: none;
   background-color: #fd10148b;
   color: #ffffff;
+}
 
+.navbar-item.has-dropwdown.is-hoverable{
+  background-color: #9c1a2a;
+  opacity: 0.9;
+  justify-content: flex-end;
+}
+
+.navbar-link{
+  color:white;
+  justify-content: flex-end;
+  font-weight: bolder;
 
 }
 
-
+.navbar-itemb{
+  justify-content: flex-end;
+}
 @import "bulma";
 //@import "functions";
