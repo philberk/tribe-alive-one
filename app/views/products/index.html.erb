@@ -11,24 +11,16 @@
       </div>
   </div>
 
+<!-- Here is the Body -->
 
-<div class="banner d-flex justify-content-center">
+<div class="index biggest-body-div">
   <h1>Welcome to the tribe. Here's a list of our products:</h1>
 </div>
-<div class="container">
-  <div class="row" >
+<div class="flex card container">
     <% @products.each do |product| %>
-      <div class="col-md-4 col-sm-6 mt-3" style="max-width: 1450px;">
-        <div class="drone-cards mx-3 h-100">
           <img src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-orange-with-graphic-back-print/201847608-1-apricotcream?$n_640w$&wid=634&fit=constrain" >
-          <div class="drone-cards-info" style="display:relative;">
             <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
             <p> Description: <%= product.price %></p>
             <p class="p-index" style="display:absolute; top:20px;"> Category <%= product.category %></p>
-          <!-- <p>Short description here!</p> -->
-          </div>
-        </div>
-      </div>
     <% end %>
-  </div>
 </div>

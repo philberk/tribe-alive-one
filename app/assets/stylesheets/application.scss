@@ -1,14 +1,14 @@
 $link: #ccccff;
 $link-hover: #f2e6ff;
 
-body {
-  margin:40px;
+body,html {
+  margin:50px;
   height:200vh;
+  margin-left:1%;
+  margin-right:1%;
+  margin-bottom:1%;
+  margin-top:1%;
 }
-
-// .trypad {
-// position: relative;
-// }
 
 .card-category {
   background-size: cover;
