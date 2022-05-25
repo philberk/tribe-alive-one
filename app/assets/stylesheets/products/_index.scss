@@ -1,17 +1,28 @@
-.index.biggest-body-div{
+*{
+  box-sizing: border-box;
+}
+.container{
   margin-top:220px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  // align-items: center;
-  // align-content: center;
-  // padding-left: var(--gp-padding-xlargeAndAbove, 80px) !important;
-  // padding-right: var(--gp-padding-xlargeAndAbove, 80px) !important;
-  // min-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 1320px;
   h1{
     font-size: 27px;
     text-align:center;
     justify-content: center;
   }
+}
+
+.row{
+  --bs-gutter-x:1.5rem;
+  --bs-gutter-y:0;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 .flex.card.container{
   gap: 7px;
@@ -20,8 +31,7 @@
   max-width: 1250px;
 }
 
-img{;
-   width: 250px;
-   object-fit:cover;
-   border-radius: 60px;
-  }
+.pics img {
+  width: 100%;
+  object-fit: cover;
+}

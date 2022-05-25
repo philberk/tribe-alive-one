@@ -1,26 +1,31 @@
-    <div class="trypad">
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1623038455007-891466ff6016?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286)">
-        Tribe Alive
-      </div>
-      <div class="navbar-itemb">
-        <ul>
-          <li> <%= link_to "Products", products_path, class:"greennav" %> </li>
-          <li> <%= link_to "About Us", about_path, class:"greennav"%></li>
-          <li> <%= link_to "Contact", contact_path, class:"greennav"%></li>
-        </ul>
-      </div>
+<div class="trypad">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1623038455007-891466ff6016?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286)">
+    Tribe Alive
   </div>
-
-  
-  <div class="index biggest-body-div">
-    <h1>Welcome to the tribe. Here's a list of our products:</h1>
-      <div class="flex card container">
-        <% @products.each do |product| %>
-              <img src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-orange-with-graphic-back-print/201847608-1-apricotcream?$n_640w$&wid=634&fit=constrain" >
-                <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
-                <p> Price (€): <%= product.price %></p>
-                <p class="p-index" style="display:absolute; top:20px;"> Category: <%= product.category %></p>
-        <% end %>
-    </div>
-
+  <div class="navbar-itemb">
+    <ul>
+      <li> <%= link_to "Products", products_path, class:"greennav" %> </li>
+      <li> <%= link_to "About Us", about_path, class:"greennav"%></li>
+      <li> <%= link_to "Contact", contact_path, class:"greennav"%></li>
+    </ul>
   </div>
+</div>
+
+
+<div class="container">
+  <h1>Welcome to the tribe. Here's a list of our products:</h1>
+        <div class="row">
+            <% @products.each do |product| %>
+            <div class="col-md-4 col-sm-6 mt-3" style="max-width: 1450px;">
+              <div class="pics mx-3 h-100">
+                  <div class="flex card container">
+                        <img class="pics" src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-orange-with-graphic-back-print/201847608-1-apricotcream?$n_640w$&wid=634&fit=constrain" >
+                          <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
+                          <p> Price (€): <%= product.price %></p>
+                          <p class="p-index" style="display:absolute; top:20px;"> Category: <%= product.category %></p>
+                        <% end %>
+                    <div>
+                </div>
+          <div>
+      </div>
+</div>
