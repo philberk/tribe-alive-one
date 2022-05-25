@@ -1,22 +1,20 @@
-*{
-  box-sizing: border-box;
-  font-style: inherit;
-  color:inherit;
-}
-
 .index.biggest-body-div{
+  margin-top:220px;
   display: grid;
-  justify-content: flex-start !important;
-  align-items: center;
-  align-content: center;
-  max-width: none !important;
-  padding-left: var(--gp-padding-xlargeAndAbove, 80px) !important;
-  padding-right: var(--gp-padding-xlargeAndAbove, 80px) !important;
-  min-width: 1440px;
+  grid-template-columns: auto auto auto auto;
+  // align-items: center;
+  // align-content: center;
+  // padding-left: var(--gp-padding-xlargeAndAbove, 80px) !important;
+  // padding-right: var(--gp-padding-xlargeAndAbove, 80px) !important;
+  // min-width: 1440px;
+  h1{
+    font-size: 27px;
+    text-align:center;
+    justify-content: center;
+  }
 }
 .flex.card.container{
-  display: grid;
-  gap: 20px;
+  gap: 7px;
   margin-left:auto;
   margin-right: auto;
   max-width: 1250px;
