@@ -21,22 +21,31 @@
 }
 
 .drone-cards-info{
-  padding: 30px 20px;
+  padding: 15px 0px;
 }
 
 .drone-cards img {
-  width: 100%;
+  width: 110%;
   object-fit: cover;
-  height: 30vh;
+  border-radius: 30px;
+  height: 40vh;
 }
 
 .drone-cards {
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 100%;
+  width: 110%;
   justify-content: center;
   text-align: center;
   align-items: center;
   padding: auto 50px;
+  height: 45vh;
+  border-radius: 50px;
 
+}
+
+.welcome.h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight:bolder;
+  font-size: 40px;
 }
