@@ -11,15 +11,15 @@
   </div>
 </div>
 
-
+<!-- >
 <div class="container">
   <h1>Welcome to the tribe. Here's a list of our products:</h1>
-        <div class="row">
-            <% @products.each do |product| %>
-            <div class="col-md-4 col-sm-6 mt-3" style="max-width: 1450px;">
-              <div class="pics mx-3 h-100">
-                  <div class="flex card container">
-                        <img class="pics" src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-orange-with-graphic-back-print/201847608-1-apricotcream?$n_640w$&wid=634&fit=constrain" >
+    <div class="row">
+      <% @products.each do |product| %>
+        <div class="col-md-4 col-sm-6 mt-3" style="max-width: 1450px;">
+            <div class="drone-cards mx-3 h-100">
+              <img class="pics" src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-orange-with-graphic-back-print/201847608-1-apricotcream?$n_640w$&wid=634&fit=constrain" >
+                  <div class="drone-cards-info" stlye="display:relative;">
                           <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
                           <p> Price (€): <%= product.price %></p>
                           <p class="p-index" style="display:absolute; top:20px;"> Category: <%= product.category %></p>
@@ -27,5 +27,23 @@
                     <div>
                 </div>
           <div>
+    </div>
+</div>
+-->
+<div class="container">
+<h1>Welcome to the tribe. Here's our latest products: </h1>
+  <div class="row mt-1" style="margin-top: 15.25rem !important;" >
+    <% @products.each do |product| %>
+      <div class="col-md-4 col-sm-6 col-lg-3 mt-9 p-4" style="max-width: 1450px; border-radius:50px;">
+        <div class="drone-cards mx-3 h-100">
+          <img src="https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80">
+          <div class="drone-cards-info" style="display:relative;">
+            <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
+            <p> Price (€): <%= product.price %></p>
+            <p class="p-index" style="display:absolute; top:20px;"> Category: <%= product.category %></p>
+          </div>
+        </div>
       </div>
+    <% end %>
+  </div>
 </div>
