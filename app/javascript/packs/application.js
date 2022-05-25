@@ -15,3 +15,8 @@ import "bootstrap/dist/css/bootstrap"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+
+//= require_tree
+//= require jquery
+//= require jquery_ujs

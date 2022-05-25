@@ -97,6 +97,10 @@ body,html {
   a{
     color:white;
     font-weight: normal;
+    text-decoration: none;
+    :hover{
+      color:purple;
+    }
   }
 }
 
