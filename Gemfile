@@ -11,6 +11,7 @@ gem 'mini_magick'
 gem 'faker'
 gem 'better_errors'
 # gem 'jquery-rails'
+gem 'font-awesome-sass'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
