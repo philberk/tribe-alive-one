@@ -8,7 +8,6 @@
 // @import "bootstrap/scss/bootstrap";
 // @import "config/fonts";
 
-
 body,html {
   margin:50px;
   height:150vh;
@@ -41,6 +40,9 @@ body,html {
   justify-content: center;
   box-shadow: 3px 2px 25px rgba(0,0,0,0.6);
   padding:15px;
+  :link{
+    text-decoration: none!important;
+  }
 
  li{
     display:inline-block;
@@ -109,6 +111,9 @@ body,html {
   // background-color: #9c1a2a;
   // justify-content: flex-end;
   // box-shadow: 0 0 15px rgba(0,0,0,0.9);
+  :link{
+    text-decoration: none!important;
+  }
 }
 
 
