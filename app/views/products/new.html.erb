@@ -1,3 +1,13 @@
-<div class="formstyle">
+<%= simple_form_for(@product), remote: true do |f|  %>
+<%= f.input :name %>
+<%= f.input :category %>
+<%= f.input :size %>
+<%= f.input :price %>
+<%= f.submit %>
+<% end %>
+
+
+<!-- <div class="formstyle">
 <%= render "form" %>
 </div>
+-->
