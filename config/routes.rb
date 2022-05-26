@@ -3,9 +3,12 @@ Rails.application.routes.draw do
   devise_for :users, controller: {
     registrations: 'registrations'
   }
-  resources :products
+  resources :products do
+    collection do
+      post :search
+    end
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
-  get '/search', to: 'products#search'
 end

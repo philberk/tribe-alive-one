@@ -5,10 +5,12 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
-
   def search
-    @products = Product.where("name LIKE ?", "%" + params[:q] + "%")
-    return @products
+    respond_to do |format|
+      format.turbo_stream do
+        render turbo_stream: turbo_stream.update("search_results", params[:name_search])
+      end
+    end
   end
 
   def show; end
