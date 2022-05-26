@@ -20,3 +20,6 @@ ActiveStorage.start()
 //= require_tree
 //= require jquery
 //= require jquery_ujs
+//== require turbolinks
+
+//$(document).on('turbolinks:load', function (){ alert("turbolinks on load event works") });

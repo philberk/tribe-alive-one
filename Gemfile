@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
-gem "turbolinks_render"
 gem 'remotipart', :git => 'https://github.com/westonganger/remotipart', :branch => 'fix_escape_javascript'
 gem 'bulma-rails'
 gem 'simple_form'
