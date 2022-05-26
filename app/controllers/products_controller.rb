@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
 
   def search
     @products = Product.where("name LIKE ?", "%" + params[:q] + "%")
+    return @products
   end
 
   def show; end
