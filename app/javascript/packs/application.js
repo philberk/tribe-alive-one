@@ -37,3 +37,5 @@ ActiveStorage.start()
 //   }
 //   });
 // });
+
+import "controllers"
