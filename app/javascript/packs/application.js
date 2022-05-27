@@ -23,3 +23,17 @@ ActiveStorage.start()
 //== require turbolinks
 
 //$(document).on('turbolinks:load', function (){ alert("turbolinks on load event works") });
+// const list= document.querySelector('#js ul')
+// const searchBar = document.forms['search-products'].querySelector('input');
+// searchBar.addEventListener('keyup', function(e){
+//   const term = e.target.value.toLowerCase();
+//   const products = list.getElementsByTagName('li');
+//   Array.from(products).forEach(function(product){
+//     const name = product.firstElementChild.textContent;
+//     if(name.toLowerCase().indexOf(term) != -1){
+//     product.style.display= 'block';
+//   } else {
+//     product.style.display ='none';
+//   }
+//   });
+// });

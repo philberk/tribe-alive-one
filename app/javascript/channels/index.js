@@ -8,7 +8,7 @@ channels.keys().forEach(channels)
 
 
 //filter books
-const list= document.querySelector('#js')
+const list= document.querySelector('#js ul');
 const searchBar = document.forms['search-products'].querySelector('input');
 searchBar.addEventListener('keyup', function(e){
   const term = e.target.value.toLowerCase();
@@ -20,5 +20,5 @@ searchBar.addEventListener('keyup', function(e){
   } else {
     product.style.display ='none';
   }
-  })
-})
+  });
+});
