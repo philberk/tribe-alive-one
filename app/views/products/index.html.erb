@@ -35,19 +35,15 @@
   <h1 class="welcome h1"> OUR PRODUCTS </h1>
 
 
-  <%#= form_with url: search_products_path, method: :post do |form| %>
-  <%#= form.search_field :name_search %>
-  <%# end %>
+    <form name="search-books" action="search">
+      <input type="text" placeholder="Search" aria-label="Search" style="padding:4px 0px;">
+      <button class="btn btn-secondary" type="Submit" style="padding: 8px 10px; border-radius:15px;"> Search </button>
+    </form>
 
-  <%# <div id="search_results"> Search </div> %>
 
-   <form class="searchbar" action="search">
-    <input type="text" name="q" placeholder="Search" aria-label="Search" style="padding:4px 0px;">
-    <button class="btn btn-secondary" type="Submit" style="padding: 8px 10px; border-radius:15px;"> Search </button>
-  </form>
 
-    <% @products.each do |product| %>
-      <div class="col-md-4 col-sm-6 col-lg-4 mt-9 p-4" style="max-width: 1450px; border-radius:50px;">
+    <li id="js" style="list-style:none;"><% @products.each do |product| %> </li>
+      <div class="col-md-4 col-sm-6 col-lg-4 mt-9 p-5" style="max-width: 1450px; border-radius:50px;">
         <div class="drone-cards mx-3 h-100">
           <img src="https://images.unsplash.com/photo-1601610694692-5575b3904552?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288">
           <div class="drone-cards-info" style="display:relative;">

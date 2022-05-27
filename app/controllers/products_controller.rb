@@ -4,14 +4,7 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
   end
-
-  # def search
-  #   format.turbo_stream do
-  #     render turbo_stream:
-  #       [turbo_stream.update("search_results", params[:name_search], locals: { products: Product.new }]
-  #     end
-  # end
-
+  
   def show; end
 
   def new

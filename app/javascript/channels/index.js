@@ -8,9 +8,17 @@ channels.keys().forEach(channels)
 
 
 //filter books
-const products= document.querySelector()
+const list= document.querySelector('#js')
 const searchBar = document.forms['search-books'].querySelector('input');
 searchBar.addEventListener('keyup', function(e){
-const term = e.target.value.toLowerCase();
-// const products = list.getElementsByTagName('li');
+  const term = e.target.value.toLowerCase(); 
+  const list = list.getElementsByTagName('li');
+  Array.from(Product).forEach(function(product){
+    const name = product.firstElementChild.textContent;
+    if(name.toLowerCase().indexOf(term) != -1)
+    product.style.display= 'block';
+  } else {
+    product.style.display ='none';
+  }
+  })
 })
