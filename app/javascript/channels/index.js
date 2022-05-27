@@ -8,7 +8,10 @@ channels.keys().forEach(channels)
 
 
 //filter books
-const list= document.querySelector('#js ul');
+const list= document.querySelector('.js');
+
+console.log(list);
+
 const searchBar = document.forms['search-products'].querySelector('input');
 searchBar.addEventListener('keyup', function(e){
   const term = e.target.value.toLowerCase();
