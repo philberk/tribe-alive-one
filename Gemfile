@@ -9,7 +9,6 @@ gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'faker'
-gem 'better_errors'
 # gem 'jquery-rails'
 gem 'font-awesome-sass'
 
