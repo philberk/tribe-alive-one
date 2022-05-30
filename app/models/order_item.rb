@@ -1,5 +1,5 @@
 class OrderItem < ApplicationRecord
-  belongs_to :OrderList
+  belongs_to :order_list
   belongs_to :product
 
   def unit_price
