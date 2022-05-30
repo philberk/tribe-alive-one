@@ -1,0 +1,56 @@
+<div class="trypad">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1623038455007-891466ff6016?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286)">
+    Tribe Alive
+  </div>
+  <div class="navbar-itemb">
+    <ul>
+      <li> <%= link_to "Products", products_path, class:"greennav" %> </li>
+      <li> <%= link_to "About Us", about_path, class:"greennav"%></li>
+      <li> <%= link_to "Contact", contact_path, class:"greennav"%></li>
+    </ul>
+  </div>
+</div>
+
+<!-- >
+<div class="container">
+  <h1>Welcome to the tribe. Here's a list of our products:</h1>
+    <div class="row">
+      <% @products.each do |product| %>
+        <div class="col-md-4 col-sm-6 mt-3" style="max-width: 1450px;">
+            <div class="drone-cards mx-3 h-100">
+              <img class="pics" src="https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-orange-with-graphic-back-print/201847608-1-apricotcream?$n_640w$&wid=634&fit=constrain" >
+                  <div class="drone-cards-info" stlye="display:relative;">
+                          <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
+                          <p> Price (€): <%= product.price %></p>
+                          <p class="p-index" style="display:absolute; top:20px;"> Category: <%= product.category %></p>
+                        <% end %>
+                    <div>
+                </div>
+          <div>
+    </div>
+</div>
+-->
+<div class="container">
+
+  <div class="row mt-1" style="margin-top: 15.25rem !important;" >
+  <h1 class="welcome h1"> OUR PRODUCTS </h1>
+
+    <form name="search-products" >
+      <input type="text" id="search" placeholder="Search" aria-label="Search" style="padding:4px 0px;">
+      <button class="btn btn-secondary" type="Submit" style="padding: 8px 10px; border-radius:15px; justify-content:flex-start;"> Search </button>
+    </form>
+
+    <li class="js" style="list-style:none;"><% @products.each do |product| %> </li>
+      <div class="col-md-4 col-sm-6 col-lg-4 mt-9 p-5" style="max-width: 1450px; border-radius:50px;">
+        <div class="drone-cards mx-3 h-100">
+          <img src="https://images.unsplash.com/photo-1601610694692-5575b3904552?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288">
+          <div class="drone-cards-info" style="display:relative;">
+            <%= link_to product.name, product_path(product), class:"text-decoration-none" %>
+            <p> Price (€): <%= product.price %></p>
+            <p class="p-index" style="display:absolute; top:20px;"> Category: <%= product.category %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
