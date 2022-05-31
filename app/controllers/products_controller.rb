@@ -3,8 +3,9 @@ class ProductsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   def index
     @products = Product.all
+    @order_items = current_order.order_items.new
   end
-  
+
   def show; end
 
   def new
