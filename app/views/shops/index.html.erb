@@ -40,13 +40,13 @@
       <button class="btn btn-secondary" type="Submit" style="padding: 8px 10px; border-radius:15px; justify-content:flex-start;"> Search </button>
     </form>
 
-    <%# <td>
+     <td>
       <%= form_for @order_item do |f| %>
-      <%#= f.hidden_field :product_id, :value => product.id %>
-      <%#= f.number_field :quantity, :value => 1, :min => 1 %>
-      <%#= f.submit "Add to Card" %>
-      <%# end %>
-    <!-- </td> %-->
+      <%= f.hidden_field :product_id, :value => product.id %>
+      <%= f.number_field :quantity, :value => 1, :min => 1 %>
+      <%= f.submit "Add to Card" %>
+      <% end %>
+     </td>
 
     <li class="js" style="list-style:none;"><% @products.each do |product| %> </li>
       <div class="col-md-4 col-sm-6 col-lg-4 mt-9 p-5" style="max-width: 1450px; border-radius:50px;">
